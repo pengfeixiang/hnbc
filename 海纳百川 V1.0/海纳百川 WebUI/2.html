@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>海纳百川</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<script type="text/javascript" src="assets/js/aa2.js"></script>
+			<script type="text/javascript">
+			  function aa(){
+                 document.getElementById('memApply').value="";
+				 document.getElementById("memApply").style.opacity="1.0";
+				 document.getElementById("memApply").style.color="white";
+			  }
+
+			  function aa1(){
+                 document.getElementById('inPay').value="";
+				 document.getElementById("inPay").style.opacity="1.0";
+				 document.getElementById("inPay").style.color="white";
+			  }
+
+			  function aa2(){
+                 document.getElementById('periodApply').value="";
+				 document.getElementById("periodApply").style.opacity="1.0";
+				 document.getElementById("periodApply").style.color="white";
+			  }
+
+			  function aa3(){
+                 document.getElementById('memRepay1').value="";
+				 document.getElementById("memRepay1").style.opacity="1.0";
+				 document.getElementById("memRepay1").style.color="white";
+			  }
+
+			  function aa4(){
+                 document.getElementById('memRepay2').value="";
+				 document.getElementById("memRepay2").style.opacity="1.0";
+				 document.getElementById("memRepay2").style.color="white";
+			  }
+
+			  function aa5(){
+                 document.getElementById('myMoney2').value="";
+				 document.getElementById("myMoney2").style.opacity="1.0";
+				 document.getElementById("myMoney2").style.color="white";
+			  }
+
+			
+
+			</script>
+			<style type="text/css">
+
+            #my{
+			  margin-left:200px;
+			}
+
+            #memApply,#inPay,#monthPay,#insureApply,#periodApply,#memInsure1,#memInsure2,#memRepay1,#memRepay2,
+			#myMoney,#myMoney1,#myMoney2,#myMoney3{
+			   width:550px;
+			   height:45px;
+			   font-family:黑体;
+			   opacity:0.4;
+			   color:#888888;
+			   border-color:#C8C8C8;
+			}
+
+			#memRepay2{
+			   margin-top:10px;
+			}
+
+			.button{
+			   margin-top:20px;
+			   font-family:微软雅黑;
+			   font-weight:bold;
+			   font-size:12px;
+			}
+
+            strong{
+			   font-family:微软雅黑;
+			   font-weight:bold;
+			}
+
+            </style>
+	</head>
+	<body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href=""></a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html" style="font-family:黑体">首页</a></li>
+							<li>
+								<a href="#" style="font-family:黑体">身份</a>
+								<ul>
+									<li><a href="1.html">普通会员</a></li>
+									<li><a href="2.html">第三方借款会员</a></li>
+									<li><a href="3.html">保险理赔中立审核机构</a></li>
+									<li><a href="4.html">借贷信用中立评估机构</a></li>
+									<li><a href="5.html">合约创始人</a></li>
+								</ul>
+							</li>
+							
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>第三方借款会员</h2>
+							
+						</header>
+						<div class="row 150%">
+							
+				<div id="my">			
+					<div>		
+							<table>
+
+<strong>会员申请:</strong>
+	<input type='hidden' id='memApply' value="2">
+	&nbsp;&nbsp;<button onclick='memApply()' class="button">申请</button>
+</div>
+<div>
+<strong>入会缴费:</strong>
+	<input type='text' id='inPay' value="请输入缴费金额" onfocus='aa1()'>
+	<button onclick='inPay()' class="button" >确定</button>
+</div>
+<div>
+<strong>借贷申请:</strong>
+    <input type='text' id='periodApply' value="请输入借款金额" onfocus='aa2()'>
+	<button onclick='periodApply()' class="button">申请</button>
+</div>
+<div>
+<strong>用户还款:</strong>
+	<input type='text' id='memRepay1' value="请输入被担保的借款合约ID" onfocus='aa3()'>
+	<input type='text' id='memRepay2' value="请输入还款金额" onfocus='aa4()'>
+	<button onclick='memRepay()' class="button">还款</button>
+</div>
+<div>
+<strong>资产查询:</strong><br/>
+	1.查询本人借款总金额情况
+    <input type='text' id='myMoney2' value="请输入本人地址" onfocus='aa5()'>
+	<button onclick='myMoney2()' class="button">查询</button><br/>	
+
+	</table>
+</div>
+</div>
+				
+					</div>
+				</div>
+
+			
+
+		</div>
+
+		
+
+	</body>
+</html>
